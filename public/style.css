@@ -1,0 +1,708 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --var-BackgrounBlackClear: #151515; 
+    --var-BackgrounBlackDark: #000000; 
+    --var-ColorDescTop: #C1C1C1;
+    --var-ColorIconsTopBackground: #4E4E4E;
+    --var-ColorDescOliva: #25291C;
+
+
+    --var-widthStandart: 1000px;
+    --var-FontInter: "Inter", sans-serif;
+
+    --var-colorLinear1CTA: #1F5055;
+    --var-colorLinear2CTA: #007480;
+    --var-colorLinear3CTA: #36848C;
+}
+
+/*Seção Topo----------------------------------------------------------------------------------------------*/
+.blackBackGround{
+    background-image: linear-gradient(to right bottom, var(--var-BackgrounBlackClear), var(--var-BackgrounBlackDark));
+    position: relative;
+}
+.sectionTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+    overflow: hidden;
+}
+.sectionTop header{
+    height: 80px;
+    width: var(--var-widthStandart);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.LogoTop{
+    font-size: 15pt;
+    font-family: var(--var-FontInter);
+}
+
+.sectionTop header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-family: var(--var-FontInter);
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+.sectionTop header nav button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.sectionTop header nav a{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    font-family: var(--var-FontInter);
+    font-size: 10pt;
+}
+
+.mainSectionTop{
+    width: var(--var-widthStandart);
+    position: relative;
+    z-index: 2;
+    height: calc(80vh - 80px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.SectionTopLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+.titleCTASectionTop{
+    font-family: var(--var-FontInter);
+    font-size: 25pt;
+    color: white;
+}
+.CTASectionTop{
+    font-family: var(--var-FontInter);
+    font-size: 12pt;
+    color: var(--var-ColorDescTop);
+    margin-top: 20px;
+}
+.buttonCTAtop{
+    height: 50px;
+    width: 300px;
+    margin-top: 40px;
+    background-image: linear-gradient( to right, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA));
+    border: none;
+    color: white;
+    font-family: var(--var-FontInter);
+    font-size: 12pt;
+}
+
+.iconsCTAtop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-top: 80px;
+    gap: 50px;
+}
+.iconsCTAtop span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.iconsCTAtop span div:nth-child(1){
+    background: var(--var-ColorIconsTopBackground);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.iconsCTAtop span div:nth-child(1) img{
+    background: var(--var-ColorIconsTopBackground);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: auto;
+}
+
+.titleIconsCTAtop{
+    font-family: var(--var-FontInter);
+    font-size: 10pt;
+    color: rgb(183, 183, 183);
+}
+.descIconCTAtop{
+    font-family: var(--var-FontInter);
+    font-size: 10pt;
+    color: white;
+    font-weight: 500;
+}
+
+.SectionTopRight{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    width: 50%;
+    height: 100%;
+}
+.SectionTopRight img{
+    height: 70vh;
+}
+.imgFeaturesDesignTop{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 70vh;
+    width: 700px;
+    background-image: url("img/featuredTools.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Segunda Seção----------------------------------------------------------------------------------*/
+.SegundaDobra{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.arrowButtonAnimated{
+    position: absolute;
+    top: 0px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 100%;
+    transform: translateY(-25px);
+}
+.arrowButtonAnimated button{
+    height: 46px;
+    width: 46px;
+    border-radius: 100%;
+    border: none;
+    background-image: linear-gradient(to bottom, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA));
+}
+.arrowButtonAnimated button img{
+    height: 30px;
+    width: 30px;
+
+}
+
+.SegundaDobra section{
+    max-width: var(--var-widthStandart);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.leftSegundaDobra{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+}
+.leftSegundaDobra span img{
+    width: 60px;
+}
+.leftSegundaDobra h2{
+    font-family: var(--var-FontInter);
+    font-size: 15pt;
+}
+.leftSegundaDobra h3{
+    background-image: linear-gradient(to right, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA)); 
+    color: transparent; 
+    -webkit-background-clip: text;
+    background-clip: text; /* Necessário para aplicar o gradiente ao texto no Firefox */
+
+    font-family: var(--var-FontInter);
+    font-size: 25pt;
+    font-weight: 700;
+}
+
+.rightSegundaDobra{
+    width: 50%;
+}
+.CardSegundaDobra {
+    background: linear-gradient(to right bottom, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA));
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardSegundaDobra::before {
+    content: '';
+    position: absolute;
+    top: 3px; 
+    left: 3px;
+    right: 3px; 
+    bottom: 3px;
+    background: white;
+    border-radius: 7px;
+    z-index: 1;
+}
+.CardSegundaDobra p{
+    position: relative;
+    color: rgb(41, 41, 41);
+    font-family: var(--var-FontInter);
+    font-size: 11pt;
+    font-weight: 600;
+    max-width: 550px;
+    z-index: 2;
+}
+.buttonKnowMore{
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-image: linear-gradient(to right, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA));
+    font-family: var(--var-FontInter);
+    font-size: 12pt;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*seção de serviços*/
+.servicesSection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+}
+.servicesSection header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+}
+.servicesSection header span{
+    width: 100px;
+    height: 4px;
+    display: block;
+    background-image: linear-gradient(to right, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA));
+}
+.servicesSection header h2{
+    font-family: var(--var-FontInter);
+    font-size: 20pt;
+    color: white;
+}
+
+
+.gridCardServices{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    position: relative;
+    z-index: 3;
+}
+.cardServices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    height: 150px;
+    width: 250px;
+    gap: 10px;
+}
+.cardServices span{
+    height: 5px;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA));
+    display: block;
+    position: absolute;
+    top: 0px;
+}
+.cardServices div img{
+    height: 30px;
+}
+.cardServices p{
+    text-align: center;
+    font-size: 10pt;
+    font-family: var(--var-FontInter);
+    font-weight: 600;
+}
+.imgFeaturesDesignServices{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 70vh;
+    width: 700px;
+    background-image: url("img/featuredTools.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+
+/*quarta dobra----------------------------------------------------------------------------------*/
+.quartaDobra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 80px;
+}
+.quartaDobra header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 700px;
+}
+.quartaDobra header span img{
+    width: 50px;
+    transform: translateY(4px);
+}
+.quartaDobra header h2{
+    font-family: var(--var-FontInter);
+    font-size: 20pt;
+    font-weight: 600;
+
+    margin-left: 10px;
+
+    background-image: linear-gradient(to right, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA)); 
+    color: transparent; 
+    -webkit-background-clip: text;
+    background-clip: text; /* Necessário para aplicar o gradiente ao texto no Firefox */
+}
+.quartaDobra header h3{
+    font-family: var(--var-FontInter);
+    font-size: 20pt;
+    font-weight: 600;
+
+    margin-left: 10px;
+
+}
+
+.mainQuartaDobra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 700px;
+}
+.cardQuartaDobra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    position: relative;
+
+    background-color: black;
+    border-radius: 10px;
+
+    width: 300px;
+    padding-bottom: 30px;
+}
+.cardQuartaDobra span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( to bottom, var(--var-colorLinear1CTA), var(--var-colorLinear3CTA), var(--var-colorLinear2CTA));
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+
+    transform: translateY(-25px);
+}
+.cardQuartaDobra span img{
+    height: 30px;
+    width: 30px;
+}
+
+.cardQuartaDobra h3{
+    font-size: 12pt;
+    font-family: var(--var-FontInter);
+    font-weight: 500px;
+    color: white;
+}
+.cardQuartaDobra p{
+    color: rgb(215, 215, 215);
+    width: 80%;
+    text-align: center;
+    font-family: var(--var-FontInter);
+    font-size: 10pt;
+    font-weight: 600;
+}
+
+.buttonQuartaDobra{
+    height: 40px;
+    font-family: var(--var-FontInter);
+    font-size: 10pt;
+    color: white;
+    width: 400px;
+    background-image: linear-gradient( to right, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA));
+    border: none;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+/*section FAQ*/
+.sectionFAQ{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+    align-items: center;
+    justify-content: start;
+    padding-top: 80px;
+    position: relative;
+}
+.sectionFAQ header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--var-widthStandart);
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+.sectionFAQ header span{
+    width: 150px;
+    height: 4px;
+    display: block;
+    background-image: linear-gradient(to right, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA));
+}
+.sectionFAQ header h2{
+    font-family: var(--var-FontInter);
+    font-size: 20pt;
+    color: white;
+}
+.conatinerBoxFAQ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 3;
+}
+.boxFAQ{
+    width: calc(100% - 40px);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-top: 1px solid black;
+}
+.boxFAQ div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+.boxFAQ div:nth-child(1) h2{
+    font-size: 12pt;
+    font-family: var(--var-FontInter);
+}
+.boxFAQ div:nth-child(1) p{
+    font-size: 10pt;
+    font-family: var(--var-FontInter);
+    font-weight: 500;
+    color: rgb(58, 58, 58);
+    max-width: 500px;
+}
+.boxFAQ div:nth-child(2) img{
+    height: 30px;
+}
+
+.imgFeaturesDesignFAQ{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 70vh;
+    width: 700px;
+    background-image: url("img/featuredTools.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+
+/*quinta dobra*/
+.quintaDobra{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mainQuintaDobra{
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftQuintaDobra{
+    width: 50%;
+    height: 40vh;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.leftQuintaDobra header{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.leftQuintaDobra header img{
+    width: 60px;
+}
+.leftQuintaDobra header h2{
+    font-family: var(--var-FontInter);
+    font-size: 25pt;
+    font-weight: 600;
+
+    background-image: linear-gradient(to right, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA)); 
+    color: transparent; 
+    -webkit-background-clip: text;
+    background-clip: text; /* Necessário para aplicar o gradiente ao texto no Firefox */
+}
+.leftQuintaDobra p{
+    font-weight: 600;
+    font-size: 11pt;
+    font-family: var(--var-FontInter);
+    color: var(--var-ColorDescOliva);
+}
+
+.rightQuintaDobra{
+    width: 50%;
+}
+.rightQuintaDobra img{
+    height: 35vh;
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.116));
+}
+
+.buttonQuintaDobra{
+    background-image: linear-gradient(to right, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA));
+    border: none;
+    width: 400px;
+    height: 40px;
+    font-family: var(--var-FontInter);
+    font-size: 12pt;
+    font-weight: 500;
+    color: white;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+
+/*footer*/
+footer{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+footer section{
+    width: var(--var-widthStandart);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+footer section span{
+    font-size: 10pt;
+    font-family: var(--var-FontInter);
+    font-weight: 500;
+    color: white;
+}
+footer section a{
+    text-decoration: none;
+    font-size: 10pt;
+    font-family: var(--var-FontInter);
+    font-weight: 500;
+    color: white;
+}
+footer section a:hover{
+    text-decoration: underline;
+}
