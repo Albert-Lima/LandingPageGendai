@@ -34,14 +34,26 @@
     overflow: hidden;
 }
 .sectionTop header{
+    background-color: rgb(18, 18, 18);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: fixed;
+    z-index: 1000;
+}
+.sectionTop header section{
     height: 80px;
     width: var(--var-widthStandart);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: white;
 }
+
 .LogoTop{
     font-size: 15pt;
     font-family: var(--var-FontInter);
@@ -59,9 +71,25 @@
 }
 
 .sectionTop header nav button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
     border: none;
     color: white;
+    cursor: pointer;
+    gap: 3px;
+}
+.sectionTop header nav button span{
+    transition: 0.2s;
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-image: linear-gradient(to right, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA));
+}
+.sectionTop header nav button span.expandedSPAN{
+    width: 100%;
 }
 
 .sectionTop header nav a{
@@ -114,6 +142,7 @@
     color: white;
     font-family: var(--var-FontInter);
     font-size: 12pt;
+    cursor: pointer;
 }
 
 .iconsCTAtop{
@@ -219,10 +248,25 @@
     border: none;
     background-image: linear-gradient(to bottom, var(--var-colorLinear1CTA), var(--var-colorLinear2CTA), var(--var-colorLinear3CTA));
 }
+@keyframes arrowAnimated {
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
 .arrowButtonAnimated button img{
     height: 30px;
     width: 30px;
-
+    animation-name: arrowAnimated;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.arrowButtonAnimated button img:hover{
+    cursor: pointer;
+    animation-play-state: paused;
 }
 
 .SegundaDobra section{
@@ -513,10 +557,9 @@
 .sectionFAQ{
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 80px);
+    height: 100vh;
     align-items: center;
-    justify-content: start;
-    padding-top: 80px;
+    justify-content: center;
     position: relative;
 }
 .sectionFAQ header{
@@ -552,7 +595,7 @@
 }
 .boxFAQ{
     width: calc(100% - 40px);
-    height: 50px;
+    height: max-content;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -578,7 +621,12 @@
     font-weight: 500;
     color: rgb(58, 58, 58);
     max-width: 500px;
+    display: none;
 }
+.boxFAQ div:nth-child(1) p.expandedDesc{
+    display: block;
+}
+
 .boxFAQ div:nth-child(2) img{
     height: 30px;
 }
@@ -705,4 +753,12 @@ footer section a{
 }
 footer section a:hover{
     text-decoration: underline;
+}
+
+
+/*responsividade ----------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1375px){
+    :root{
+        --var-widthStandart: 90%;
+    }
 }
