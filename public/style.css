@@ -997,7 +997,7 @@ footer section a:hover{
     /*seção de serviços*/
     .servicesSection{
         height: max-content;
-        padding-bottom: 80px;
+        padding-bottom: 120px;
         padding-top: 30px;
         gap: 10px;
     }
