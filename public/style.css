@@ -997,8 +997,8 @@ footer section a:hover{
     /*seção de serviços*/
     .servicesSection{
         height: max-content;
-        padding-bottom: 180px;
-        padding-top: 30px;
+        padding-bottom: 80px;
+        padding-top: 120px;
         gap: 10px;
     }
     .gridCardServices{
