@@ -227,6 +227,7 @@
     align-items: center;
     justify-content: center;
     height: 80vh;
+    width: 100%;
 }
 .arrowButtonAnimated{
     position: absolute;
@@ -352,7 +353,7 @@
 }
 
 
-/*seção de serviços*/
+/*seção de serviços------------------------------------------------------------------------------------------------------*/
 .servicesSection{
     height: 100vh;
     display: flex;
@@ -553,7 +554,7 @@
     cursor: pointer;
 }
 
-/*section FAQ*/
+/*section FAQ------------------------------------------------------------------------------------------*/
 .sectionFAQ{
     display: flex;
     flex-direction: column;
@@ -761,4 +762,325 @@ footer section a:hover{
     :root{
         --var-widthStandart: 90%;
     }
+    .SegundaDobra section{
+        width: 60%
+    }
+
+    /*quinta dobra*/
+    .mainQuintaDobra{
+        width: max-content;
+        justify-content: start;
+    }
+    .leftQuintaDobra{
+        width: 50%;
+    }
+    .rightQuintaDobra{
+        width: max-content;
+    }
+}
+@media (max-height: 700px){
+    .mainSectionTop{
+        height: calc(95vh - 80px);
+    }
+}
+@media (max-width: 990px) {
+    .SectionTopRight img{
+        height: 60vh;
+    }
+}
+@media (max-width: 920px){
+    .titleCTASectionTop{
+        font-size: 15pt;
+    }
+    .CTASectionTop{
+        font-size: 10pt;
+        margin-top: 15px;
+    }
+    .buttonCTAtop{
+        width: 200px;
+        margin-top: 30px;
+        font-size: 11pt;
+    }
+    .iconsCTAtop{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        margin-top: 60px;
+        gap: 40px;
+    }
+    .iconsCTAtop span div:nth-child(1){
+        width: 30px;
+        height: 30px;
+    }
+    .iconsCTAtop span div:nth-child(1) img{
+        height: 20px;
+    }
+    .titleIconsCTAtop{
+        font-family: var(--var-FontInter);
+        font-size: 8pt;
+        color: rgb(183, 183, 183);
+    }
+    .descIconCTAtop{
+        font-family: var(--var-FontInter);
+        font-size: 9pt;
+        color: white;
+        font-weight: 500;
+    }
+
+    .SectionTopRight img{
+        height: 50vh;
+    }
+    .imgFeaturesDesignTop{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: 80vh;
+        width: 90%;
+        background-image: url("img/featuredTools.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /*segunda dobra*/
+    .SegundaDobra section{
+        width: 700px;
+    }
+    .leftSegundaDobra{
+        width: 30%;
+    }
+    .rightSegundaDobra{
+        width: 70%;
+    }
+
+    /*services*/
+    .servicesSection{
+        height: calc(max-content + 300px);
+        gap: 10px;
+    }
+    .gridCardServices{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .imgFeaturesDesignServices{
+        width: 50%;
+        height: 100%;
+    }
+    /*quarta dobra*/
+    .quartaDobra{
+        height: max-content;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .quartaDobra header{
+        justify-content: center;
+    }
+    .containerCards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .quartaDobra header span img{
+        width: 30px
+    }
+    .quartaDobra header h2{
+        font-size: 15pt;
+    }
+    .quartaDobra header h3{
+        font-size: 15pt;
+    }
+    /*section FAQ*/
+    .sectionFAQ{
+        height: max-content;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .imgFeaturesDesignFAQ{
+        width: 50%;
+        height: 100%;
+    }
+
+    /*quinta dobra*/
+    .quintaDobra{
+        margin: auto;
+        width: var(--var-widthStandart);
+        height: max-content;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        align-items: start;
+    }
+    .leftQuintaDobra{
+        gap: 15px;
+        height: max-content;
+    }
+    .leftQuintaDobra header img{
+        width: 50px
+    }
+    .leftQuintaDobra header h2{
+        font-size: 15pt;
+    }
+    .leftQuintaDobra p{
+        font-size: 10pt;
+    }
+    .rightQuintaDobra img{
+        height: 150px;
+    }
+    .buttonQuintaDobra{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 820px) {
+    /*segunda dobra*/
+    .SegundaDobra section{
+        width: 100%;
+        flex-direction: column;
+        height: max-content;
+        gap: 30px
+    }
+    .leftSegundaDobra h2 br{
+        display: none;
+    }
+    .leftSegundaDobra{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .leftSegundaDobra span img{
+        width: 30px
+    }
+    .leftSegundaDobra h2{
+        width: max-content;
+    }
+    .leftSegundaDobra h3{
+        font-size: 15pt;
+    }
+    .rightSegundaDobra{
+        width: 70%;
+    }
+    /*seção de FAQ*/
+    .conatinerBoxFAQ{
+        width: var(--var-widthStandart);
+    }
+    /*quinta dobra*/
+    .quintaDobra{
+        align-items: center;
+    }
+    .mainQuintaDobra{
+        width: max-content;
+        justify-content: start;
+        margin: auto;
+    }
+    .leftQuintaDobra{
+        width: 50%;
+    }
+    .rightQuintaDobra{
+        width: max-content;
+    }
+}
+@media (max-width: 740px) {
+    /*section top*/
+    .SectionTopRight img{
+        height: 300px;
+    }
+    .LogoTop{
+        font-size: 12pt;
+    }
+    /*seção de serviços*/
+    .servicesSection{
+        height: max-content;
+        padding-bottom: 80px;
+        padding-top: 30px;
+        gap: 10px;
+    }
+    .gridCardServices{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    /*quarta dobra */
+    .quartaDobra header{
+        width: 100%;
+    }
+    .mainQuartaDobra{
+        width: 100%;
+    }
+    .containerCards{
+        width: 100%;
+    }
+}
+@media (max-width: 532px){
+    /*seção topo*/
+    .sectionTop header nav{
+        gap: 20px;
+    }
+    .mainSectionTop{
+        height: calc(95vh - 50px);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .SectionTopLeft{
+        align-items: center;
+    }
+    .titleCTASectionTop{
+        text-align: center;
+    }
+    .CTASectionTop{
+        text-align: center;
+    }
+    .SectionTopRight{
+        display: none;
+    }
+    /*segunda dobra*/
+    .leftSegundaDobra span img{
+        display: none;
+    }
+    /*quarta dobra*/
+    .quartaDobra header span{
+        display: none;
+    }
+    /*quinta dobra*/
+    .leftQuintaDobra p{
+        width: 150px;
+    }
+    .leftQuintaDobra p br{
+        display: none;
+    }
+    .rightQuintaDobra img{
+        height: 100px;
+    }
+}
+@media (max-width: 450px){
+    /*seção topo*/
+    .sectionTop header section{
+        justify-content: end;
+    }
+    .LogoTop{
+        display: none;
+    }
+    
+    /*segunda dobra*/
+    .leftSegundaDobra h2{
+        font-size: 12pt;
+    }
+    .leftSegundaDobra h3 {
+        font-size: 12pt;
+    }
+
+    /*quarta dobra*/
+    .quartaDobra header h2, .quartaDobra header h3{
+        font-size: 12pt;
+    }
+
+    /*seção de FAQ*/
 }
