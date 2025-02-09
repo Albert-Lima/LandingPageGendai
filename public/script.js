@@ -68,3 +68,40 @@ boxFAQ.forEach(button=>{
         p.classList.add("expandedDesc")
     })
 })
+
+
+
+// Função de rolagem suave
+let isScrolling = false;
+
+window.addEventListener('wheel', function(event) {
+    if (isScrolling) return; // Impede múltiplas animações ao mesmo tempo
+    isScrolling = true;
+
+    let scrollAmount = event.deltaY;
+
+    // Distância de rolagem ajustada (100 pixels)
+    const scrollDistance = window.innerHeight - 600;
+
+    // Se estiver rolando para baixo
+    if (scrollAmount > 0) {
+        window.scrollBy({
+            top: scrollDistance, // Rola para baixo 100 pixels
+            behavior: 'smooth'
+        });
+    } else {
+        // Se estiver rolando para cima
+        window.scrollBy({
+            top: -scrollDistance, // Rola para cima 100 pixels
+            behavior: 'smooth'
+        });
+    }
+
+    // Desabilita a rolagem padrão do navegador
+    event.preventDefault();
+
+    // Aguarda o final da rolagem
+    setTimeout(() => {
+        isScrolling = false;
+    }, 900); // Ajuste o tempo de espera conforme necessário
+});
